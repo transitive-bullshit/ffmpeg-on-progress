@@ -1,0 +1,26 @@
+{
+  "name": "ffmpeg-on-progress",
+  "version": "0.1.0",
+  "description": "Utility for robustly reporting progress with fluent-ffmpeg.",
+  "main": "index.js",
+  "repository": "transitive-bullshit/ffmpeg-on-progress",
+  "author": "Travis Fischer <travis@automagical.ai>",
+  "license": "MIT",
+  "scripts": {
+    "test": "ava -v && standard"
+  },
+  "keywords": [
+    "ffmpeg",
+    "fluent-ffmpeg"
+  ],
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "sinon": "^4.4.9",
+    "standard": "^11.0.0",
+    "tempy": "^0.2.1"
+  },
+  "dependencies": {
+    "hh-mm-ss": "^1.2.0"
+  }
+}
