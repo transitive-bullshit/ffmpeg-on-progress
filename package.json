@@ -1,6 +1,6 @@
 {
   "name": "ffmpeg-on-progress",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Utility for robustly reporting progress with fluent-ffmpeg.",
   "main": "index.js",
   "repository": "transitive-bullshit/ffmpeg-on-progress",
