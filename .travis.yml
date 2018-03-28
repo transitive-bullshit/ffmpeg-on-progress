@@ -1,16 +1,7 @@
-matrix:
-  include:
-    - os: linux
-      env: NODE_VERSION=8
-script:
-  - test-ci.sh
+language: node_js
+node_js:
+  - 9
 before_install:
-  - sudo add-apt-repository ppa:sauce/ppa -y
+  - sudo add-apt-repository mc3man/trusty-media -y
   - sudo apt-get update -q
-  - sudo apt-get install flvtool2 -y
-addons:
-  apt:
-    packages:
-    - wget
-    - tar
-    - bzip2
+  - sudo apt-get install ffmpeg -y
