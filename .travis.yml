@@ -3,7 +3,7 @@ matrix:
     - os: linux
       env: NODE_VERSION=8
 script:
-  - tools/test-travis.sh
+  - test-ci.sh
 before_install:
   - sudo add-apt-repository ppa:sauce/ppa -y
   - sudo apt-get update -q
