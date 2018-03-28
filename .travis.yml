@@ -1,6 +1,16 @@
-language: node_js
-node_js:
-  - 9
-  - 8
-  - 6
-  - 4
+matrix:
+  include:
+    - os: linux
+      env: NODE_VERSION=8
+script:
+  - tools/test-travis.sh
+before_install:
+  - sudo add-apt-repository ppa:sauce/ppa -y
+  - sudo apt-get update -q
+  - sudo apt-get install flvtool2 -y
+addons:
+  apt:
+    packages:
+    - wget
+    - tar
+    - bzip2
