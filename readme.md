@@ -2,7 +2,7 @@
 
 > Utility for robustly reporting ffmpeg command progress with fluent-ffmpeg.
 
-[![NPM](https://img.shields.io/npm/v/ffmpeg-on-progress.svg)](https://www.npmjs.com/package/ffmpeg-on-progress) [![Build Status](https://travis-ci.org/transitive-bullshit/ffmpeg-on-progress.svg?branch=master)](https://travis-ci.org/transitive-bullshit/ffmpeg-on-progress) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/ffmpeg-on-progress.svg)](https://www.npmjs.com/package/ffmpeg-on-progress) [![Build Status](https://travis-ci.com/transitive-bullshit/ffmpeg-on-progress.svg?branch=master)](https://travis-ci.com/transitive-bullshit/ffmpeg-on-progress) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 Some ffmpeg commands aren't capable fo producing [progress](https://github.com/fluent-ffmpeg/node-fluent-ffmpeg#progress-transcoding-progress-information) events, such as when the input is a stream or when using multiple inputs. This simple utility allows you to accurately report progress in these cases by looking at the number of frames ffmpeg has processed with the caveat that you need to know the expected output's duration ahead of time.
 
